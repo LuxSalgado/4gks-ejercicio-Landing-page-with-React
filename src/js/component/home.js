@@ -50,11 +50,58 @@ function Header() {
 	);
 }
 
+function Jumbotron() {
+	return <h1>hola</h1>;
+}
+
+function Card() {
+	return (
+		<div className="card" style={{ width: "16rem" }}>
+			<img
+				className="card-img-top"
+				src="https://cdn.pixabay.com/photo/2015/08/28/14/54/lagoon-911963__180.jpg"
+				alt="Card image cap"
+			/>
+			<div className="card-body d-flex flex-column align-items-center">
+				<h5 className="card-title">Card title</h5>
+				<p className="card-text">
+					Some quick example text to build on the card title and make
+					up the bulk of the card&apos;s content.
+				</p>
+			</div>
+			<div className="card-footer d-flex flex-column align-items-center">
+				<a href="#" className="btn btn-primary">
+					Find Out More!
+				</a>
+			</div>
+		</div>
+	);
+}
+
+function Footer() {
+	return (
+		<footer className="page-footer font-small bg-dark ">
+			<div className="footer-copyright text-center py-3 text-white">
+				Copyright © Your Website 2021
+			</div>
+		</footer>
+	);
+}
+
 export function Home() {
 	return (
 		<div className="container-fluid m-0 p-0">
 			<Header />
-			<div className="container"></div>
+			<div className="container">
+				<Jumbotron />
+				<div className="d-flex justify-content-between">
+					<Card imagen="" />
+					<Card imagen="" />
+					<Card imagen="" />
+					<Card imagen="" />
+				</div>
+			</div>
+			<Footer />
 		</div>
 	);
 }
