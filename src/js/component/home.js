@@ -51,12 +51,29 @@ function Header() {
 }
 
 function Jumbotron() {
-	return <h1>hola</h1>;
+	return (
+		<div className="jumbotron d-flex flex-column">
+			<h1 className="display-2">A Warm Welcome!</h1>
+			<p className="lead h4">
+				<b>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+					do eiusmod tempor incididunt ut labore et dolore magna
+					aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+					ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</b>
+			</p>
+			<p className="lead">
+				<a className="btn btn-primary btn-lg" href="#" role="button">
+					Call to action!
+				</a>
+			</p>
+		</div>
+	);
 }
 
 function Card() {
 	return (
-		<div className="card" style={{ width: "16rem" }}>
+		<div className="card mb-3" style={{ width: "16rem" }}>
 			<img
 				className="card-img-top"
 				src="https://cdn.pixabay.com/photo/2015/08/28/14/54/lagoon-911963__180.jpg"
@@ -95,10 +112,10 @@ export function Home() {
 			<div className="container">
 				<Jumbotron />
 				<div className="d-flex justify-content-between">
-					<Card imagen="" />
-					<Card imagen="" />
-					<Card imagen="" />
-					<Card imagen="" />
+					<Card />
+					<Card />
+					<Card />
+					<Card />
 				</div>
 			</div>
 			<Footer />
